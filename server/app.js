@@ -11,7 +11,7 @@ const URI = "mongodb://localhost:27017/graphql"
 mongoose.connect(URI);
 mongoose.connection.once('open', ()=>{
   console.log("Connected to database");
-})
+});
 
 app.use(cors());
 
